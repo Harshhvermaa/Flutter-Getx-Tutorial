@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:getx_statemanagement/views/bottomsheet.dart';
+import 'package:getx_statemanagement/views/counterApp.dart';
 import 'package:getx_statemanagement/views/customdialog.dart';
 import 'package:getx_statemanagement/views/show_snackbar.dart';
 
@@ -14,7 +15,7 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return GetMaterialApp(
-      home: ShowBottomSheet()
+      home: CounterApplication()
     );
   }
 }

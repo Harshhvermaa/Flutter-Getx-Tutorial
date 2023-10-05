@@ -18,31 +18,31 @@ class ShowBottomSheet extends StatelessWidget {
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
             ElevatedButton(onPressed: () {
-              // Get.bottomSheet(
-              //   Column(
-              //     mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-              //     children: [
-              //       const SizedBox(height: 20),
-              //       const Center(
-              //         child: Text(
-              //           'Bottom Sheet',
-              //           style: TextStyle(fontSize: 18),
-              //         ),
-              //       ),
-              //       OutlinedButton(
-              //         onPressed: () {
-              //           Get.back();
-              //         },
-              //         child: const Text('Close'),
-              //       ),
-              //     ],
-              //   ),
-              //   backgroundColor: Colors.white,
-              //   elevation: 0,
-              //   shape: RoundedRectangleBorder(
-              //     borderRadius: BorderRadius.circular(10),
-              //   ),
-              // );
+              Get.bottomSheet(
+                Column(
+                  mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                  children: [
+                    const SizedBox(height: 20),
+                    const Center(
+                      child: Text(
+                        'Effortless Codes',
+                        style: TextStyle(fontSize: 18),
+                      ),
+                    ),
+                    OutlinedButton(
+                      onPressed: () {
+                        Get.back();
+                      },
+                      child: const Text('Subscribe'),
+                    ),
+                  ],
+                ),
+                backgroundColor: Colors.white,
+                elevation: 0,
+                shape: RoundedRectangleBorder(
+                  borderRadius: BorderRadius.circular(10),
+                ),
+              );
             }, child: Text("Show Bottomsheet"))
           ],
         ),
