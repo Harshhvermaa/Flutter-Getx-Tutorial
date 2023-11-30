@@ -4,6 +4,8 @@ import 'package:getx_statemanagement/views/bottomsheet.dart';
 import 'package:getx_statemanagement/views/chngeTheme.dart';
 import 'package:getx_statemanagement/views/counterApp.dart';
 import 'package:getx_statemanagement/views/customdialog.dart';
+import 'package:getx_statemanagement/views/homescreen.dart';
+import 'package:getx_statemanagement/views/responsive.dart';
 import 'package:getx_statemanagement/views/show_snackbar.dart';
 
 void main() {
@@ -16,7 +18,7 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return GetMaterialApp(
-      home: ChangeTheme()
+      home: Homescreen()
     );
   }
 }

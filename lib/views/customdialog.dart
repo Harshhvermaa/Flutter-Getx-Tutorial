@@ -2,8 +2,24 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 
-class CustomDialog extends StatelessWidget {
+class CustomDialog extends StatefulWidget {
   const CustomDialog({super.key});
+
+  @override
+  State<CustomDialog> createState() => _CustomDialogState();
+}
+
+class _CustomDialogState extends State<CustomDialog> {
+
+  var data = Get.arguments;
+
+  @override
+  void initState() {
+    // TODO: implement initState
+    print( "Our First is : ${data[0]["first"] }" );
+    print( "Our Second is : ${data[0]["second"] }" );
+    super.initState();
+  }
 
   @override
   Widget build(BuildContext context) {
@@ -28,7 +44,7 @@ class CustomDialog extends StatelessWidget {
                   Text("data"),
                   Text("data"),
                   ElevatedButton(onPressed: () {
-                    
+
                   }, child: Text("Subscribe"))
                 ],
               )
